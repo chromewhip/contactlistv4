@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20151201201000) do
   create_table "homies", force: :cascade do |t|
     t.string   "name"
     t.string   "email"
-    t.integer  "phone"
+    t.string   "phone"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
