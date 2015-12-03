@@ -8,11 +8,11 @@ $(function() {
       $("<td>").text(homie.email).appendTo(tr);
     },
     recieveHomies: function(homies) {
-      $.each(homies, handlers.addHomie)
+      $.each(homies, handlers.addHomie);
     },
-    getHomies: function() {
-      handlers.container.empty()
-      $.getJSON(homies, handlers.recieve.homies);
+    getHomies: function(data) {
+      handlers.container.empty();
+      $.getJSON("/homies", handlers.recieveHomies );
     }
   };
 
